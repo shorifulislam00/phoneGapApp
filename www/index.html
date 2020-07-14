@@ -48,12 +48,19 @@
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
+            <button type="button" onclick="hitMe()">Click Me</button>
         </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    
     <script type="text/javascript">
         app.initialize();
+
+        function hitMe(){
+            alert("You hit me.");
+        }
+
     </script>
 </body>
 
